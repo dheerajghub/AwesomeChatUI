@@ -18,11 +18,15 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "AwesomeChatUI",
-            dependencies: []),
-        .testTarget(
-            name: "AwesomeChatUITests",
-            dependencies: ["AwesomeChatUI"]),
+            path: "./Sources/AwesomeChatUI.xcframework")
     ]
+    
+//    targets: [
+//      .binaryTarget(
+//        name: "CalendarControl",
+//        url: "https://example.com/CalendarControl.xcframework.zip",
+//        checksum: "4d4053074fd8b92f9f2f339c48980b99")
+//    ]
 )

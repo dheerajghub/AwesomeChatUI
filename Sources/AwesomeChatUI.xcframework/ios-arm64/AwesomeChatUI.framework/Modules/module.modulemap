@@ -1,0 +1,11 @@
+framework module AwesomeChatUI {
+  umbrella header "AwesomeChatUI.h"
+
+  export *
+  module * { export * }
+}
+
+module AwesomeChatUI.Swift {
+    header "AwesomeChatUI-Swift.h"
+    requires objc
+}
